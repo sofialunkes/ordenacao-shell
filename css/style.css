@@ -1,0 +1,28 @@
+﻿.header-parallax {
+   background-image: url('../img/logo-shell-trevo.png');
+    background-size: 400px;
+    background-repeat:no-repeat;
+    background-color: #168e40;
+    background-position-x:480px;
+    width: 100%;
+    position: fixed;
+    height: 400px;
+}
+
+    .header-parallax h1 {
+        text-align: center;
+        color: #ffffff;
+        /*text-shadow: 2px 3px 1px #000;*/
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        letter-spacing: 20px;
+        font-size: 100px;
+        padding: 150px 0;
+    }
+
+.principal {
+    background: #E7E3DA;
+    position: relative;
+    top: 380px;
+    font-family: 'Raleway', sans-serif;
+}
