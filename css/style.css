@@ -1,8 +1,6 @@
 ﻿.header-parallax {
-   background-image: url('../img/logo-shell-trevo.png');
     background-size: 400px;
-    background-repeat:no-repeat;
-    background-color: #168e40;
+    background-color: #065370;
     background-position-x:480px;
     width: 100%;
     position: fixed;
