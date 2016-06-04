@@ -10,6 +10,10 @@ public class Pessoa
 {
     private string nome;
     private int idade;
+    private char sexo;
+    private DateTime dataCadastro;
+
+    
 
     public Pessoa()
     {
@@ -32,5 +36,17 @@ public class Pessoa
     {
         get { return idade; }
         set { idade = value; }
+    }
+
+    public char Sexo
+    {
+        get { return sexo; }
+        set { sexo = value; }
+    }
+
+    public DateTime DataCadastro
+    {
+        get { return dataCadastro; }
+        set { dataCadastro = value; }
     }
 }

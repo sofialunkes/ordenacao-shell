@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,13 +10,20 @@ public class Jogador : Pessoa
 {
     private string nick;
     private int numConta;
-    private ArrayList jogos;
+    private List<Jogo> jogos;
+
+    public List<Jogo> Jogos
+    {
+        get { return jogos; }
+        set { jogos = value; }
+    }
 
     public Jogador(string nome, int idade)
         : base(nome, idade)
     {
         NumConta = 0;
         Nick = "";
+        Jogos = null;
     }
 
     public int NumConta
