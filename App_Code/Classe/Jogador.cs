@@ -12,29 +12,22 @@ public class Jogador : Pessoa
     private int numConta;
     private List<Jogo> jogos;
 
-    public List<Jogo> Jogos
+
+
+    public Jogador(string nome, int idade, char sexo, DateTime dataCadastro)
+        : base(nome, idade, sexo, dataCadastro)
     {
-        get { return jogos; }
-        set { jogos = value; }
+
+        this.Nome = nome;
+        this.Idade = idade;
+        this.Sexo = sexo;
+        this.DataCadastro = dataCadastro;
+        this.NumConta = 0;
+        this.Nick = "";
+        this.Jogos = null;
     }
 
-    public Jogador(string nome, int idade)
-        : base(nome, idade)
-    {
-        NumConta = 0;
-        Nick = "";
-        Jogos = null;
-    }
-
-    public int NumConta
-    {
-        get { return numConta; }
-        set { numConta = value; }
-    }
-    public string Nick
-    {
-        get { return nick; }
-        set { nick = value; }
-    }
-
+    public int NumConta { get; set; }
+    public string Nick { get; set; }
+    public List<Jogo> Jogos { get; set; }
 }
