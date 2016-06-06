@@ -6,22 +6,22 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ordenacao-shell", "http://localhost:50250", "{57D34E14-D26D-4C97-B978-A83D524E02BF}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50250"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\Projetos\ordenacao-shell\"
+		Debug.AspNetCompiler.PhysicalPath = "..\ordenacao-shell\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50250\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_50250"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\Projetos\ordenacao-shell\"
+		Release.AspNetCompiler.PhysicalPath = "..\ordenacao-shell\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50250\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "..\..\..\..\Desktop\Projetos\ordenacao-shell\"
+		SlnRelativePath = "..\ordenacao-shell\"
 	EndProjectSection
 EndProject
 Global

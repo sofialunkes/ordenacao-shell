@@ -7,22 +7,30 @@ using System.Web.UI.WebControls;
 
 public partial class _Default : System.Web.UI.Page
 {
+    int cont = 0;
     protected void Page_Load(object sender, EventArgs e)
     {
 
     }
-    protected void Button1_Click(object sender, EventArgs e)
+    protected void btnSalvarJogador_Click(object sender, EventArgs e)
     {
         DateTime agora = DateTime.Now;
-        Jogador j = new Jogador(Convert.ToString(txtNome.TextMode), Convert.ToInt32(txtIdade.TextMode), Convert.ToChar(RadioButtonList1.SelectedValue), agora);
+        Jogador j = new Jogador(Convert.ToString(txtNome.TextMode), Convert.ToInt32(txtIdade.TextMode), Convert.ToChar(ddlSexo.SelectedValue), agora);
         j.Nome = txtNome.Text;
-        j.Idade = Convert.ToInt32(txtIdade.Text);
+        j.Idade = Convert.ToInt32(txtIdade.TextMode);
         j.Nick = txtNick.Text;
-        j.NumConta = Convert.ToInt32(txtNumeroConta.Text);
+        j.NumConta = cont++;
         j.DataCadastro = agora;
 
     }
-
+    protected void btnLimparCadastro_Click(object sender, EventArgs e)
+    {
+        txtNome.Text = "";
+        txtNick.Text = "";
+        txtIdade.Text = null;
+        ddlSexo.SelectedIndex = 0;
+        
+    }
 
     public static int[] ShellSort(int[] array)
     {
@@ -56,4 +64,5 @@ public partial class _Default : System.Web.UI.Page
         return array;
 
     }
+    
 }

@@ -1,38 +1,72 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Index.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
     <div class="principal">
-        <h1>Shell Sort</h1>
-        <p> Nome:<asp:TextBox ID="txtNome" runat="server"></asp:TextBox><br />
-        Idade: <asp:TextBox runat="server" ID="txtIdade"></asp:TextBox>
-        Sexo<asp:RadioButtonList ID="RadioButtonList1" runat="server">
-            <asp:ListItem Value="F">Feminino</asp:ListItem>
-            <asp:ListItem Value="M">Masculino</asp:ListItem>
-        </asp:RadioButtonList>
-        Nick:<asp:TextBox ID="txtNick" runat="server"></asp:TextBox><br />
-        NumeroDaConta:<asp:TextBox ID="txtNumeroConta" runat="server"></asp:TextBox><br />
-        <asp:Button ID="btnCadastrarJogador" runat="server" Text="Button" OnClick="Button1_Click" /><br /></p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloribus, dolorum fugiat laudantium molestias sequi ea tenetur facilis nemo impedit delectus quas eveniet iusto quidem modi recusandae accusamus, ut dignissimos, velit voluptas consequuntur? Similique laboriosam reprehenderit, ducimus aliquam tempora earum pariatur impedit sit accusamus dolores delectus cupiditate fuga sed autem animi nemo nostrum architecto rem, rerum accusantium sint. Cupiditate temporibus, sapiente at cum, voluptates, consequatur aperiam harum corporis reprehenderit atque ipsa. Laudantium ad dolor culpa nemo quo, repellat suscipit maiores, deleniti veritatis enim tempore modi accusantium sequi quos architecto atque impedit ex porro obcaecati expedita laboriosam aspernatur dolorum! Qui, commodi.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloribus, dolorum fugiat laudantium molestias sequi ea tenetur facilis nemo impedit delectus quas eveniet iusto quidem modi recusandae accusamus, ut dignissimos, velit voluptas consequuntur? Similique laboriosam reprehenderit, ducimus aliquam tempora earum pariatur impedit sit accusamus dolores delectus cupiditate fuga sed autem animi nemo nostrum architecto rem, rerum accusantium sint. Cupiditate temporibus, sapiente at cum, voluptates, consequatur aperiam harum corporis reprehenderit atque ipsa. Laudantium ad dolor culpa nemo quo, repellat suscipit maiores, deleniti veritatis enim tempore modi accusantium sequi quos architecto atque impedit ex porro obcaecati expedita laboriosam aspernatur dolorum! Qui, commodi.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloribus, dolorum fugiat laudantium molestias sequi ea tenetur facilis nemo impedit delectus quas eveniet iusto quidem modi recusandae accusamus, ut dignissimos, velit voluptas consequuntur? Similique laboriosam reprehenderit, ducimus aliquam tempora earum pariatur impedit sit accusamus dolores delectus cupiditate fuga sed autem animi nemo nostrum architecto rem, rerum accusantium sint. Cupiditate temporibus, sapiente at cum, voluptates, consequatur aperiam harum corporis reprehenderit atque ipsa. Laudantium ad dolor culpa nemo quo, repellat suscipit maiores, deleniti veritatis enim tempore modi accusantium sequi quos architecto atque impedit ex porro obcaecati expedita laboriosam aspernatur dolorum! Qui, commodi.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloribus, dolorum fugiat laudantium molestias sequi ea tenetur facilis nemo impedit delectus quas eveniet iusto quidem modi recusandae accusamus, ut dignissimos, velit voluptas consequuntur? Similique laboriosam reprehenderit, ducimus aliquam tempora earum pariatur impedit sit accusamus dolores delectus cupiditate fuga sed autem animi nemo nostrum architecto rem, rerum accusantium sint. Cupiditate temporibus, sapiente at cum, voluptates, consequatur aperiam harum corporis reprehenderit atque ipsa. Laudantium ad dolor culpa nemo quo, repellat suscipit maiores, deleniti veritatis enim tempore modi accusantium sequi quos architecto atque impedit ex porro obcaecati expedita laboriosam aspernatur dolorum! Qui, commodi.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloribus, dolorum fugiat laudantium molestias sequi ea tenetur facilis nemo impedit delectus quas eveniet iusto quidem modi recusandae accusamus, ut dignissimos, velit voluptas consequuntur? Similique laboriosam reprehenderit, ducimus aliquam tempora earum pariatur impedit sit accusamus dolores delectus cupiditate fuga sed autem animi nemo nostrum architecto rem, rerum accusantium sint. Cupiditate temporibus, sapiente at cum, voluptates, consequatur aperiam harum corporis reprehenderit atque ipsa. Laudantium ad dolor culpa nemo quo, repellat suscipit maiores, deleniti veritatis enim tempore modi accusantium sequi quos architecto atque impedit ex porro obcaecati expedita laboriosam aspernatur dolorum! Qui, commodi.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloribus, dolorum fugiat laudantium molestias sequi ea tenetur facilis nemo impedit delectus quas eveniet iusto quidem modi recusandae accusamus, ut dignissimos, velit voluptas consequuntur? Similique laboriosam reprehenderit, ducimus aliquam tempora earum pariatur impedit sit accusamus dolores delectus cupiditate fuga sed autem animi nemo nostrum architecto rem, rerum accusantium sint. Cupiditate temporibus, sapiente at cum, voluptates, consequatur aperiam harum corporis reprehenderit atque ipsa. Laudantium ad dolor culpa nemo quo, repellat suscipit maiores, deleniti veritatis enim tempore modi accusantium sequi quos architecto atque impedit ex porro obcaecati expedita laboriosam aspernatur dolorum! Qui, commodi.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloribus, dolorum fugiat laudantium molestias sequi ea tenetur facilis nemo impedit delectus quas eveniet iusto quidem modi recusandae accusamus, ut dignissimos, velit voluptas consequuntur? Similique laboriosam reprehenderit, ducimus aliquam tempora earum pariatur impedit sit accusamus dolores delectus cupiditate fuga sed autem animi nemo nostrum architecto rem, rerum accusantium sint. Cupiditate temporibus, sapiente at cum, voluptates, consequatur aperiam harum corporis reprehenderit atque ipsa. Laudantium ad dolor culpa nemo quo, repellat suscipit maiores, deleniti veritatis enim tempore modi accusantium sequi quos architecto atque impedit ex porro obcaecati expedita laboriosam aspernatur dolorum! Qui, commodi.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloribus, dolorum fugiat laudantium molestias sequi ea tenetur facilis nemo impedit delectus quas eveniet iusto quidem modi recusandae accusamus, ut dignissimos, velit voluptas consequuntur? Similique laboriosam reprehenderit, ducimus aliquam tempora earum pariatur impedit sit accusamus dolores delectus cupiditate fuga sed autem animi nemo nostrum architecto rem, rerum accusantium sint. Cupiditate temporibus, sapiente at cum, voluptates, consequatur aperiam harum corporis reprehenderit atque ipsa. Laudantium ad dolor culpa nemo quo, repellat suscipit maiores, deleniti veritatis enim tempore modi accusantium sequi quos architecto atque impedit ex porro obcaecati expedita laboriosam aspernatur dolorum! Qui, commodi.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloribus, dolorum fugiat laudantium molestias sequi ea tenetur facilis nemo impedit delectus quas eveniet iusto quidem modi recusandae accusamus, ut dignissimos, velit voluptas consequuntur? Similique laboriosam reprehenderit, ducimus aliquam tempora earum pariatur impedit sit accusamus dolores delectus cupiditate fuga sed autem animi nemo nostrum architecto rem, rerum accusantium sint. Cupiditate temporibus, sapiente at cum, voluptates, consequatur aperiam harum corporis reprehenderit atque ipsa. Laudantium ad dolor culpa nemo quo, repellat suscipit maiores, deleniti veritatis enim tempore modi accusantium sequi quos architecto atque impedit ex porro obcaecati expedita laboriosam aspernatur dolorum! Qui, commodi.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-lg-8 col-lg-offset-2">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#cadastro" aria-controls="cadastro" role="tab" data-toggle="tab">Cadastro</a></li>
+                        <li role="presentation"><a href="#jogo" aria-controls="jogo" role="tab" data-toggle="tab">Jogos</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane  fade in active" id="cadastro">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-lg-offset-1">
+                                            <div class="form-group">
+                                                <h4>Nome:</h4>
+                                                <asp:TextBox ID="txtNome" runat="server" CssClass="form-control"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-10 col-lg-offset-1">
+                                            <div class="form-group">
+                                                <h4>Idade</h4>
+                                                <asp:TextBox runat="server" ID="txtIdade" CssClass="form-control" TextMode="Number"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-10 col-lg-offset-1">
+                                            <h4>Sexo:</h4>
+                                            <asp:DropDownList runat="server" ID="ddlSexo" CssClass="form-control">
+                                                <asp:ListItem></asp:ListItem>
+                                                <asp:ListItem Value="F">Feminino</asp:ListItem>
+                                                <asp:ListItem Value="M">Masculino</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-10 col-lg-offset-1">
+                                            <h4>Nick:</h4>
+                                            <asp:TextBox runat="server" CssClass="form-control" ID="txtNick"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-10 col-lg-offset-1">
+                                            <br />
+                                            <asp:Button ID="btnLimparCadastro" runat="server" CssClass="btn btn-danger btn-lg col-lg-6" Text="Limpar" OnClick="btnLimparCadastro_Click"/>
+                                            <asp:Button ID="btnCadastrarJogador" runat="server" CssClass="btn btn-success btn-lg col-lg-6" Text="Cadastrar" OnClick="btnSalvarJogador_Click" /><br />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="jogo">...</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 side-panel">
+                    <h4>Contas Cadastradas</h4>
+                </div>
+            </div>
+        </div>
     </div>
 </asp:Content>
 
