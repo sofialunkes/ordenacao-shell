@@ -33,4 +33,8 @@ public class Jogo
         get { return idJogo; }
         set { idJogo = value; }
     }
+    public override string ToString()
+    {
+        return "Nome:" + Nome + "<br/> Genero:" + Genero;
+    }
 }

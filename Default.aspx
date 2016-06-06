@@ -59,9 +59,57 @@
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="jogo">
-                            <asp:CheckBoxList runat="server" ID="cblJogos">
-                                <asp:ListItem></asp:ListItem>
-                            </asp:CheckBoxList>
+                            <br />
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Jogo</th>
+                                        <th>Genero</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>World of Warcraft</td>
+                                        <td>Massive Multiplayer Online Role-Player Gaming</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Star Craft</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fifa 2016</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mafia III</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>God of War</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mortal Kombat</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>League Of Legends</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Top Gear</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dota 2</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>The Sims 4</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -72,4 +120,3 @@
         </div>
     </div>
 </asp:Content>
-

@@ -27,4 +27,11 @@ public class Jogador : Pessoa
     public int NumConta { get; set; }
     public string Nick { get; set; }
     public List<Jogo> Jogos { get; set; }
+
+    /*
+    public override string toString()
+    {
+        return "<tr><td>" + Nome + "</td><td>" + Idade + "</td><td>" + Sexo + "</td><td>" + DataCadastro + "</td><td>"+Nick;
+    }
+     * */
 }

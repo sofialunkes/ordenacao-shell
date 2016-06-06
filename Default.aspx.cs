@@ -8,11 +8,14 @@ using System.Web.UI.WebControls;
 public partial class _Default : System.Web.UI.Page
 {
     int cont = 0;
-    List<Jogador> jogadores = new List<Jogador>();
+    
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (!IsPostBack)
+        {
 
+        }
     }
     protected void btnSalvarJogador_Click(object sender, EventArgs e)
     {
@@ -24,7 +27,7 @@ public partial class _Default : System.Web.UI.Page
         gamer.Nick = txtNick.Text;
         gamer.NumConta = cont++;
         gamer.DataCadastro = agora;
-        jogadores.Add(gamer);
+        Jogador_DB.selectJogadores();
 
     }
     protected void btnLimparCadastro_Click(object sender, EventArgs e)
