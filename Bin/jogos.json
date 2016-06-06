@@ -1,0 +1,87 @@
+[
+	{
+		"nome":"World of Warcraft",
+		"genero":" Massive Multiplayer Online Role-Player Gaming",
+		"id":1
+	},
+	{
+		"nome":"League of Legends",
+		"genero":"Multiplayer Online Battle Arena",
+		"id":2
+	},
+	{
+		"nome":"Final Fantasy XV",
+		"genero":"Role-Player Gaming",
+		"id":3
+	},
+	{
+		"nome":"Minecraft",
+		"genero":"Sandbox",
+		"id":4
+	},
+	{
+		"nome":"H1Z1",
+		"genero":"Massive Multiplayer Online",
+		"id":5
+	},
+	{
+		"nome":"Counter-Strike:GO",
+		"genero":"First-Person Shooter",
+		"id":6
+	},
+	{
+		"nome":"Super Mario World",
+		"genero":"Platform",
+		"id":7
+	},
+	{
+		"nome":"Donkey Kong",
+		"genero":"Platform",
+		"id":8
+	},
+	{
+		"nome":"Pac-Man",
+		"genero":"Platform",
+		"id":9
+	},
+	{
+		"nome":"Grand Theft Auto: San Andreas Nakashima",
+		"genero":"Third-Person Shooter",
+		"id":10
+	},
+	{
+		"nome":"Zelda",
+		"genero":"Platform",
+		"id":11
+	},
+	{
+		"nome":"Mortal-Kombat",
+		"genero":"Beat'em up",
+		"id":12
+	},
+	{
+		"nome":"Aladdin",
+		"genero":"Platform",
+		"id":13
+	},
+	{
+		"nome":"Crash Bandicoot",
+		"genero":"Platform",
+		"id":14
+	},
+	{
+		"nome":"HearthStone",
+		"genero":"Massive Multiplayer Online Role-Player Gaming",
+		"id":15
+	},
+	{
+		"nome":"Dota 2",
+		"genero":"Multiplayer Online Battle Arena",
+		"id":16
+	},
+	{
+		"nome":"Flappy Bird",
+		"genero":"Platform",
+		"id":17
+	}
+]

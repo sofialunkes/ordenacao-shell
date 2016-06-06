@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-/// <summary>
-/// Summary description for Jogo
-/// </summary>
 public class Jogo
 {
     private string nome;
@@ -14,7 +11,9 @@ public class Jogo
 
     public Jogo()
     {
-        
+        Nome = "";
+        Genero = "";
+        IdJogo = 0;
     }
 
     public string Nome

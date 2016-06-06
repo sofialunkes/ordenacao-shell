@@ -8,6 +8,8 @@ using System.Web.UI.WebControls;
 public partial class _Default : System.Web.UI.Page
 {
     int cont = 0;
+    List<Jogador> jogadores = new List<Jogador>();
+
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -15,12 +17,14 @@ public partial class _Default : System.Web.UI.Page
     protected void btnSalvarJogador_Click(object sender, EventArgs e)
     {
         DateTime agora = DateTime.Now;
-        Jogador j = new Jogador(Convert.ToString(txtNome.TextMode), Convert.ToInt32(txtIdade.TextMode), Convert.ToChar(ddlSexo.SelectedValue), agora);
-        j.Nome = txtNome.Text;
-        j.Idade = Convert.ToInt32(txtIdade.TextMode);
-        j.Nick = txtNick.Text;
-        j.NumConta = cont++;
-        j.DataCadastro = agora;
+
+        Jogador gamer = new Jogador(Convert.ToString(txtNome.TextMode), Convert.ToInt32(txtIdade.TextMode), Convert.ToChar(ddlSexo.SelectedValue), agora);
+        gamer.Nome = txtNome.Text;
+        gamer.Idade = Convert.ToInt32(txtIdade.TextMode);
+        gamer.Nick = txtNick.Text;
+        gamer.NumConta = cont++;
+        gamer.DataCadastro = agora;
+        jogadores.Add(gamer);
 
     }
     protected void btnLimparCadastro_Click(object sender, EventArgs e)
@@ -29,7 +33,7 @@ public partial class _Default : System.Web.UI.Page
         txtNick.Text = "";
         txtIdade.Text = null;
         ddlSexo.SelectedIndex = 0;
-        
+
     }
 
     public static int[] ShellSort(int[] array)
@@ -54,15 +58,10 @@ public partial class _Default : System.Web.UI.Page
             }
             else
             {
-
                 gap = (int)(gap / 2.2);
-
             }
-
         }
-
         return array;
-
     }
-    
+
 }

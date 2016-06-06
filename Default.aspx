@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Index.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
@@ -52,14 +51,18 @@
                                     <div class="row">
                                         <div class="col-lg-10 col-lg-offset-1">
                                             <br />
-                                            <asp:Button ID="btnLimparCadastro" runat="server" CssClass="btn btn-danger btn-lg col-lg-6" Text="Limpar" OnClick="btnLimparCadastro_Click"/>
+                                            <asp:Button ID="btnLimparCadastro" runat="server" CssClass="btn btn-danger btn-lg col-lg-6" Text="Limpar" OnClick="btnLimparCadastro_Click" />
                                             <asp:Button ID="btnCadastrarJogador" runat="server" CssClass="btn btn-success btn-lg col-lg-6" Text="Cadastrar" OnClick="btnSalvarJogador_Click" /><br />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="jogo">...</div>
+                        <div role="tabpanel" class="tab-pane fade" id="jogo">
+                            <asp:CheckBoxList runat="server" ID="cblJogos">
+                                <asp:ListItem></asp:ListItem>
+                            </asp:CheckBoxList>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-2 side-panel">
