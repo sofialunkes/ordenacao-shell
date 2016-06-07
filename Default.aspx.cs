@@ -21,12 +21,14 @@ public partial class _Default : System.Web.UI.Page
     {
         DateTime agora = DateTime.Now;
 
+
         Jogador gamer = new Jogador(Convert.ToString(txtNome.TextMode), Convert.ToInt32(txtIdade.TextMode), Convert.ToChar(ddlSexo.SelectedValue), agora);
         gamer.Nome = txtNome.Text;
         gamer.Idade = Convert.ToInt32(txtIdade.TextMode);
         gamer.Nick = txtNick.Text;
         gamer.NumConta = cont++;
         gamer.DataCadastro = agora;
+        lblExibir.Text += "<tr><td>" + txtNome.Text + "</td><td>" + txtNick.Text +"</td></tr>";
         Jogador_DB.selectJogadores();
 
     }
@@ -36,8 +38,8 @@ public partial class _Default : System.Web.UI.Page
         txtNick.Text = "";
         txtIdade.Text = null;
         ddlSexo.SelectedIndex = 0;
-
-    }
+        
+        }
 
     public static int[] ShellSort(int[] array)
     {

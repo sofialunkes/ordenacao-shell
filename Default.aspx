@@ -115,6 +115,19 @@
                 </div>
                 <div class="col-lg-2 side-panel">
                     <h4>Contas Cadastradas</h4>
+                    <table class="table table-hover">
+                        <tr>
+                            <td>
+                                Nome
+                            </td>
+                            <td>
+                                Nick
+                            </td>
+                        </tr>
+                        <asp:Label ID="lblExibir" runat="server" Text=""></asp:Label>
+                    </table>
+
+
                 </div>
             </div>
         </div>
