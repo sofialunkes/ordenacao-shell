@@ -7,39 +7,51 @@ using System.Web.UI.WebControls;
 
 public partial class _Default : System.Web.UI.Page
 {
-    int cont = 0;
-    
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack)
+        if (!Page.IsPostBack)
         {
 
+            lblJogosCadastrados.Text = JogosCadastrados.Select();
         }
+
+
+        if (Session["JOGADORES"] != null)
+        {
+            Jogador_DB jogadores = (Jogador_DB)Session["JOGADORES"];
+            lblInformacoesJogador.Text = jogadores.SelectJogadores();
+        }
+
+
     }
+
     protected void btnSalvarJogador_Click(object sender, EventArgs e)
     {
-        DateTime agora = DateTime.Now;
+        Jogador gamer = new Jogador(Convert.ToInt32(txtNumConta.Text), Convert.ToString(txtNome.Text), Convert.ToInt32(txtIdade.Text), Convert.ToChar(ddlSexo.SelectedValue), DateTime.Now, txtNick.Text);
 
-
-        Jogador gamer = new Jogador(Convert.ToString(txtNome.TextMode), Convert.ToInt32(txtIdade.TextMode), Convert.ToChar(ddlSexo.SelectedValue), agora);
-        gamer.Nome = txtNome.Text;
-        gamer.Idade = Convert.ToInt32(txtIdade.TextMode);
-        gamer.Nick = txtNick.Text;
-        gamer.NumConta = cont++;
-        gamer.DataCadastro = agora;
-        lblExibir.Text += "<tr><td>" + txtNome.Text + "</td><td>" + txtNick.Text +"</td></tr>";
-        Jogador_DB.selectJogadores();
-
+        if (Session["JOGADORES"] != null)
+        {
+            Jogador_DB jogadores = (Jogador_DB)Session["JOGADORES"];
+            jogadores.SalvarJogador(gamer);
+            Session["JOGADORES"] = jogadores;
+        }
+        else
+        {
+            Jogador_DB jogadores = new Jogador_DB();
+            jogadores.SalvarJogador(gamer);
+            Session["JOGADORES"] = jogadores;
+        }
     }
+
     protected void btnLimparCadastro_Click(object sender, EventArgs e)
     {
         txtNome.Text = "";
         txtNick.Text = "";
         txtIdade.Text = null;
         ddlSexo.SelectedIndex = 0;
-        
-        }
+        txtNumConta.Text = "";
+    }
 
     public static int[] ShellSort(int[] array)
     {

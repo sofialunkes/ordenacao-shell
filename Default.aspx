@@ -27,6 +27,14 @@
                                     <div class="row">
                                         <div class="col-lg-10 col-lg-offset-1">
                                             <div class="form-group">
+                                                <h4>ID:</h4>
+                                                <asp:TextBox ID="txtNumConta" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-10 col-lg-offset-1">
+                                            <div class="form-group">
                                                 <h4>Idade</h4>
                                                 <asp:TextBox runat="server" ID="txtIdade" CssClass="form-control" TextMode="Number"></asp:TextBox>
                                             </div>
@@ -50,6 +58,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-10 col-lg-offset-1">
+                                            <h4>Jogos:</h4>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-10 col-lg-offset-1">
                                             <br />
                                             <asp:Button ID="btnLimparCadastro" runat="server" CssClass="btn btn-danger btn-lg col-lg-6" Text="Limpar" OnClick="btnLimparCadastro_Click" />
                                             <asp:Button ID="btnCadastrarJogador" runat="server" CssClass="btn btn-success btn-lg col-lg-6" Text="Cadastrar" OnClick="btnSalvarJogador_Click" /><br />
@@ -64,50 +78,10 @@
                                 <thead>
                                     <tr>
                                         <th>Jogo</th>
-                                        <th>Genero</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>World of Warcraft</td>
-                                        <td>Massive Multiplayer Online Role-Player Gaming</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Star Craft</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fifa 2016</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mafia III</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>God of War</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mortal Kombat</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>League Of Legends</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Top Gear</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dota 2</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>The Sims 4</td>
-                                        <td></td>
-                                    </tr>
+                                    <asp:Label ID="lblJogosCadastrados" runat="server"></asp:Label>
                                 </tbody>
                             </table>
                         </div>
@@ -116,18 +90,20 @@
                 <div class="col-lg-2 side-panel">
                     <h4>Contas Cadastradas</h4>
                     <table class="table table-hover">
-                        <tr>
-                            <td>
-                                Nome
-                            </td>
-                            <td>
-                                Nick
-                            </td>
-                        </tr>
-                        <asp:Label ID="lblExibir" runat="server" Text=""></asp:Label>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Idade</th>
+                                <th>Sexo</th>
+                                <th>Nick</th>
+                                <th>Data Hora</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <asp:Label ID="lblInformacoesJogador" runat="server"></asp:Label>
+                        </tbody>
                     </table>
-
-
                 </div>
             </div>
         </div>

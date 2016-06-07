@@ -8,16 +8,31 @@ using System.Web;
 /// </summary>
 public class Jogador_DB
 {
-    private static int contJogador;
-    private static List<Jogador> jogadores = new List<Jogador>();
+    private List<Jogador> jogadores = new List<Jogador>();
 
-    public static void selectJogadores()
+    public string SelectJogadores()
     {
+        string text = "";
         foreach (Jogador gamer in jogadores)
         {
-
+            text += "<tr><td>" + gamer.NumConta + "</td><td>" + gamer.Nome + "</td><td>" + gamer.Idade + "</td><td>" + gamer.Sexo + "</td><td>" + gamer.Nick + "</td><td>" + gamer.DataCadastro + "</td></tr>";
         }
+
+        return text;
     }
 
+    public void SelectJogadorPorId()
+    {
 
+    }
+
+    public void SelectIdsJogadores()
+    {
+
+    }
+
+    public void SalvarJogador(Jogador jogador)
+    {
+        jogadores.Add(jogador);
+    }
 }

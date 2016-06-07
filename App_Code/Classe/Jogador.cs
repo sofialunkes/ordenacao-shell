@@ -6,32 +6,20 @@ using System.Web;
 
 public class Jogador : Pessoa
 {
-    private string nick;
-    private int numConta;
-    private List<Jogo> jogos;
+    public string Nick { get; set; }
+    public List<Jogo> Jogos { get; set; }
+    public int NumConta { get; set; }
 
-    public Jogador(string nome, int idade, char sexo, DateTime dataCadastro)
+    public Jogador(int numConta, string nome, int idade, char sexo, DateTime dataCadastro, string nick)
         : base(nome, idade, sexo, dataCadastro)
     {
 
         this.Nome = nome;
+        this.NumConta = numConta;
         this.Idade = idade;
         this.Sexo = sexo;
         this.DataCadastro = dataCadastro;
-        this.NumConta = 0;
-        this.Nick = "";
+        this.Nick = nick;
         this.Jogos = new List<Jogo>();
     }
-
-
-    public int NumConta { get; set; }
-    public string Nick { get; set; }
-    public List<Jogo> Jogos { get; set; }
-
-    /*
-    public override string toString()
-    {
-        return "<tr><td>" + Nome + "</td><td>" + Idade + "</td><td>" + Sexo + "</td><td>" + DataCadastro + "</td><td>"+Nick;
-    }
-     * */
 }
