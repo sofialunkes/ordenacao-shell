@@ -7,10 +7,11 @@
     <div class="principal">
         <div class="container-fluid">
             <div class="row">
-                <div class=" col-lg-8 col-lg-offset-2">
+                <div class=" col-lg-7 col-lg-offset-2">
                     <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#cadastro" aria-controls="cadastro" role="tab" data-toggle="tab">Cadastro</a></li>
                         <li role="presentation"><a href="#jogo" aria-controls="jogo" role="tab" data-toggle="tab">Jogos</a></li>
+                        <li role="presentation"><a href="#ordenacao" aria-controls="ordenacao" role="tab" data-toggle="tab">Ordenar</a></li>
                     </ul>
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane  fade in active" id="cadastro">
@@ -85,9 +86,13 @@
                                 </tbody>
                             </table>
                         </div>
+                        <div class="tab-pane fade" id="ordenacao">
+                            <asp:Button runat="server" Text="Select"/>
+                            <asp:Button runat="server" Text="Ordenar" ID="btnOrdenar" OnClick="btnOrdenar_Click"/>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-2 side-panel">
+                <div class="col-lg-3">
                     <h4>Contas Cadastradas</h4>
                     <table class="table table-hover">
                         <thead>

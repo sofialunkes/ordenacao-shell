@@ -13,7 +13,7 @@ public partial class _Default : System.Web.UI.Page
         if (!Page.IsPostBack)
         {
 
-            lblJogosCadastrados.Text = JogosCadastrados.Select();
+            lblJogosCadastrados.Text = JogosCadastrados;
         }
 
 
@@ -53,23 +53,25 @@ public partial class _Default : System.Web.UI.Page
         txtNumConta.Text = "";
     }
 
-    public static int[] ShellSort(int[] array)
+    public List<Jogo> ShellSort(Jogador jogador)
     {
-        int gap = array.Length / 2;
+        int tamanhoArray=  jogador.Jogos.Count;
+        int gap = tamanhoArray/2;
+        List<Jogo> vetTemp = jogador.Jogos;
         while (gap > 0)
         {
-            for (int i = 0; i < array.Length - gap; i++) //modified insertion sort
+            for (int i = 0; i < tamanhoArray - gap; i++) //modified insertion sort
             {
                 int j = i + gap;
-                int tmp = array[j];
-                while (j >= gap && tmp > array[j - gap])
+                Jogo tmp = vetTemp[j];
+                while (j >= gap && tmp.IdJogo > vetTemp[j - gap].IdJogo)
                 {
-                    array[j] = array[j - gap];
+                    vetTemp[j] = vetTemp[j - gap];
                     j -= gap;
                 }
-                array[j] = tmp;
+                vetTemp[j] = tmp;
             }
-            if (gap == 2) //change the gap size
+            if (gap == 2)
             {
                 gap = 1;
             }
@@ -78,7 +80,7 @@ public partial class _Default : System.Web.UI.Page
                 gap = (int)(gap / 2.2);
             }
         }
-        return array;
+        return vetTemp;
     }
-
+    
 }
